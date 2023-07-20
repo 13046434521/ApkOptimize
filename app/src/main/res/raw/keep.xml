@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:keep="@mipmap/kun"
+    tools:shrinkMode="safe"
+    tools:discard="@layout/*" />
+<!--
+keep:即便没被引用，也不被缩减的资源
+discard:即便被引用，也要缩减的资源
+shrinkMode:safe模式:安全模式，引用的资源以及可能被反射的资源。都不会被资源缩减以及代码缩减
+           strict模式:严格模式。只有明确被引用的资源，不会被资源缩减以及代码缩减
+-->
