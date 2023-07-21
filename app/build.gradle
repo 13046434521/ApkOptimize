@@ -48,15 +48,20 @@ android {
 //            }
 //        }
 //    }
-    // 一次性，按架构打包
-    splits{
-        abi{
-            enable = true // 是否开启
-            reset() // 重置
-            include 'armeabi-v7a','arm64-v8a' // 按so库文件夹，分开打包
-            universalApk true // 是否打包一个包含所有so的apk
-        }
-    }
+    // 一次性按要求构建多个 APK
+//    splits{
+//        density { // 根据密度构建apk
+//            enable true
+//            reset()
+//            include "mdpi", "hdpi"
+//        }
+//        abi{
+//            enable = true // 是否开启
+//            reset() // 重置
+//            include 'armeabi-v7a','arm64-v8a' // 按so库文件夹，分开打包
+//            universalApk true // 是否打包一个包含所有so的apk
+//        }
+//    }
 
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
