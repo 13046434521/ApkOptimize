@@ -21,3 +21,9 @@ Apk大小优化示例
 ### resource.arsc语言优化.png
 [resource.arsc语言优化](/image/resource.arsc语言优化.webp)
 ![resource.arsc语言优化.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cb968a38395842bbafd469a7df2792bc~tplv-k3u1fbpfcp-watermark.image?)
+
+### 资源文件名称不混淆
+```properties
+#开启后资源文件夹以及文件名不会被混淆
+android.enableResourceOptimizations=false
+```

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools"
-    tools:keep="@mipmap/kun"
+    tools:keep="@mipmap/kun,@drawable/ic_droplet_tab"
     tools:shrinkMode="safe"
     tools:discard="@layout/*" />
 <!--
