@@ -17,5 +17,6 @@ dependencyResolutionManagement {
 
 
 rootProject.name = "Optimize"
-include ':app'
+include ':apk'//apk体积适配
 
+include ':screen'//屏幕适配
