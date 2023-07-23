@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setCustomDensity(this,this.getApplication(),360);
+        setCustomDensity(this,this.getApplication(),360);
         setContentView(R.layout.activity_main);
     }
     private static float sNoncompatDensity;
@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         // 求出宽为UI设计图大小时，Density，DPI，以及ScaledDensity的大小
         float targetDensity = displayMetrics.widthPixels/uiSize;//按照UI设计图设计时的Density的值。此处为360
         float targetScaledDensity = targetDensity * (sNoncompactScaledDensity/sNoncompatDensity);
-        int targetDensityDpi = (int) (160 * targetDensity);
+        int targetDensityDpi = (int) (160 * targetDensity);//dpi为160时，1dp = 1px
         // 修改系统Application中的默认大小
         displayMetrics.density = targetDensity;
         displayMetrics.scaledDensity = targetScaledDensity;
